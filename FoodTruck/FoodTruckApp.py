@@ -52,13 +52,13 @@ class FoodTruckApp:
             valid_input = False
             while not valid_input:
                 try:
-                    print(f"What is the name of Food Truck {i} ('quit' to finish data entry)")
+                    print(f"What is the name of Food Truck {i+1} ('quit' to finish data entry)")
                     name = str(input()) 
                     if name == "quit":
                         return False
-                    print(f"What is the food of Food Truck {i}")
+                    print(f"What is the food of Food Truck {i+1}")
                     food_type = str(input())
-                    print(f"What is the rating of Food Truck {i}")
+                    print(f"What is the rating of Food Truck {i+1}")
                     rating = float(input())
                     valid_input = True
                 except:
