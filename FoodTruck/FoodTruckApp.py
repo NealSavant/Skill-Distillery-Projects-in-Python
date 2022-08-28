@@ -6,7 +6,6 @@ class FoodTruckApp:
         self.MAX_FOOD_TRUCKS: int = 5
         self.food_truck_fleet: list[FoodTruck] = [None] * self.MAX_FOOD_TRUCKS
 
-
     @staticmethod
     def main() -> None:
         food_truck_app: FoodTruckApp = FoodTruckApp()
@@ -42,6 +41,8 @@ class FoodTruckApp:
                     active = False
                 elif user_input > 0 and user_input < 4:
                     self.__input_selector(user_input) 
+                else:
+                    print("Not a valid input")
             except:
                 print("Not a valid input")
 
