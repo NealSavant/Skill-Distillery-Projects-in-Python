@@ -1,4 +1,3 @@
-
 from FoodTruck import FoodTruck
 
 

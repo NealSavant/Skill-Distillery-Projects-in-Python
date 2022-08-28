@@ -9,9 +9,6 @@ class FoodTruck:
         self.__rating = float("{0:0.1f}".format(rating))
         FoodTruck.pk += 1
 
-    """
-    To String
-    """
     def __str__(self) -> str:
         return f"\n \
         -------------------------\n \
